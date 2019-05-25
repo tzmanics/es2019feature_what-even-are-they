@@ -103,11 +103,40 @@
           </ul>
         </section>
         <section>
+          <h3><code>Array.prototype.flat</code></h3>
+          <h4>
+            <a href="https://github.com/michaelficarra">Michael Ficarra</a>,
+            <a href="https://github.com/bterlson">Brian Terlson</a> &
+            <a href="https://github.com/mathiasbynens">Mathias Bynens</a>
+          </h4>
           <section>
-            <code>Array.prototype.flat</code>
+            What even is it: an array method that "smooshes" down a
+            multi-dimensional array by one factor or the specified depth.
           </section>
           <section>
-            <code>Array.prototype.flatMap</code>
+            <code>
+              let shoes = ["$300", ["runs small", "betch"], "mine"];
+              shoes.flat() //["$300", "runs small", "betch", "mine"];
+            </code>
+          </section>
+          <section>
+            Compatibility:
+          </section>
+        </section>
+        <section>
+          <h3><code>Array.prototype.flatMap</code></h3>
+          <h4>
+            <a href="https://github.com/michaelficarra">Michael Ficarra</a>,
+            <a href="https://github.com/bterlson">Brian Terlson</a> &
+            <a href="https://github.com/mathiasbynens">Mathias Bynens</a>
+          </h4>
+          <section>
+            What even is it: the combination of <code>.flat()</code> &amp;
+            <code>.map()</code> returning an Array of values.
+          </section>
+          <section>
+            <code>
+            </code>
           </section>
           <section>
             Compatibility:
@@ -122,7 +151,7 @@
         <section>
           <h1>Minor Features</h1>
           <ul>
-            <li> <code>String.prototype.{trimStart, trimEnd}</code></li>
+            <li><code>String.prototype.{trimStart, trimEnd}</code></li>
             <li><code>Symbol.prototype.description</code></li>
             <li>Optional Catch Binding</li>
             <li><code>Array.prototype.sort()</code> required to be stable</li>
